@@ -12,4 +12,22 @@
 - watch YouTube video
 
 # Exercise
-Add the ability to edit movies
+- Add the ability to edit movies
+- Add `actor` table and associate them with movies
+You will need to create a new migration called: `V1__ActorTable.sql` and the following sql to create the actor table
+```sql
+CREATE TABLE actor
+(
+    id    bigserial primary key,
+    name  TEXT NOT NULL,
+    movie bigint REFERENCES movie (id),
+    unique (name, movie)
+);
+```
+
+# Join the community
+<p>
+    <a href="https://github.com/badges/shields/graphs/contributors" alt="Contributors">
+        <img src="https://img.shields.io/discord/699965319883784252" />
+    </a>
+</p>
