@@ -10,3 +10,6 @@
 # How to get started
 - switch to branch `git checkout start`
 - watch YouTube video
+
+# Exercise
+Add the ability to edit movies
